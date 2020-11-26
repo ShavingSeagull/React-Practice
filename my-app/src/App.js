@@ -5,16 +5,20 @@ import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProp
 import StatefulGreeting from './components/StatefulGreeting';
 import StatefulGreetingWithCallback from './components/StatefulGreetingWithCallback';
 import StatefulGreetingWithPreviousState from './components/StatefulGreetingWithPreviousState';
+import EventsFunctional from './components/EventsFunctional';
+import EventsClass from './components/EventsClass';
+import EventBinding from './components/EventBinding';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 
 function App() {
   return (
     <div className="App">
-      <FunctionalGreeting />
-      <FunctionalGreetingWithProps greeting="Nice to meet you!"/>
-      <FunctionalGreetingWithProps greeting="Get lost, you commie wanker"/>
-      <StatefulGreeting greeting="Suck on my breeches"/>
-      <StatefulGreetingWithCallback greeting="I've got a fucking callback, bitches!"/>
-      <StatefulGreetingWithPreviousState greeting="I've got a previous state, boiiii!"/>
+      <EventsFunctional />
+      <EventsClass />
+      <EventBinding />
+      <ConditionalRenderingFunctional connected={true} />
+      <ConditionalRenderingClass />
     </div>
   );
 }
